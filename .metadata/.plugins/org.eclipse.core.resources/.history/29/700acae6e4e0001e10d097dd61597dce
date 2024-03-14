@@ -1,0 +1,23 @@
+package com.springboot.project.controllers;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UserRestController {
+
+	
+	@GetMapping("/index")
+	public String index() {
+		Map<String, Object> body = new HashMap<>();
+		body.put(key:"titulo", value:"Hello World!!");
+		body.put(key:"nombre", value:"Ariel");
+		body.put(key:"apellido",value: "Aguirre");
+		
+	return "index";
+	}
+}

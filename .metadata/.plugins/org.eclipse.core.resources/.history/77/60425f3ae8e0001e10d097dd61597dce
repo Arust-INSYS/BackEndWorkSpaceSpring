@@ -1,0 +1,7 @@
+package com.springboot.project.models;
+
+public class User {
+	private String nombre;
+	private String apellido;
+
+}

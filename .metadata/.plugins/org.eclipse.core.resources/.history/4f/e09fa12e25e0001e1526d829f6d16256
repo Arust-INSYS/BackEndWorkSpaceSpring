@@ -1,0 +1,15 @@
+package com.springboot.project.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class UserController {
+
+	//Cual quier peticion recibida mediante una URL
+	@GetMapping(value="/index")
+	public String index() {
+		
+	return "index";
+	}
+}
